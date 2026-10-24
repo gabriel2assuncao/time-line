@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa Linha do Tempo ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="timeline.css">
+</head>
+<body>
+
+  <!-- Fundo com mosaico aconchegante e película escura -->
+  <div class="mosaic" id="mosaic" aria-hidden="true"></div>
+  <div class="overlay"></div>
+
+  <main>
+    <header>
+      <h1>Nossa Linha do Tempo ❤️</h1>
+      
+      <!-- Duas contagens empilhadas -->
+      <div class="counters-container">
+        <div class="days-known" id="days-known">Calculando...</div>
+        <div class="days-together" id="days-together">Calculando...</div>
+      </div>
+
+      <p class="hint">Minha Preta, role a página devagar e veja o coração caminhar pela nossa história.</p>
+    </header>
+
+    <!-- Linha do tempo dinâmica -->
+    <section class="tl" id="tl" aria-label="Linha do tempo">
+      <div class="line">
+        <div class="fill"></div>
+      </div>
+      <div class="heart" aria-hidden="true">❤</div>
+    </section>
+
+    <footer>
+      <a class="cta" href="texto.html">Ver a carta ❤️</a>
+      <small>Feito com todo o meu amor para você</small>
+    </footer>
+  </main>
+
+  <!-- Janela de visualização de foto em tela cheia (Lightbox) -->
+  <div class="lb" id="lb" role="dialog" aria-label="Foto ampliada">
+    <button aria-label="Fechar">✕</button>
+    <img alt="Foto ampliada">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

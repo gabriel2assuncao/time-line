@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossas Cartas ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="timeline.css">
+  <style>
+    .cartas-main {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .carta-box {
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--edge);
+      border-radius: 24px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 20px 45px rgba(0,0,0,.7);
+    }
+    .carta-box.destaque {
+      border: 1px solid var(--gold);
+      box-shadow: 0 0 20px rgba(255,209,102,.2);
+    }
+    .carta-tag {
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .carta-box h2 {
+      color: var(--soft);
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .carta-box p {
+      color: #f1f1f1;
+      font-weight: 300;
+      line-height: 1.8;
+      white-space: pre-line;
+      font-size: 1rem;
+    }
+    .voltar-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fundo Mosaico -->
+  <div class="mosaic" id="mosaic" aria-hidden="true"></div>
+  <div class="overlay"></div>
+
+  <main class="cartas-main">
+    <header>
+      <h1>Minhas Cartas Para Você ❤️</h1>
+      <p class="hint">Palavras escritas com todo o meu coração.</p>
+    </header>
+
+    <!-- Onde as cartas vão aparecer dinamicamente -->
+    <div id="lista-cartas">
+      <div class="carta-box">
+        <p>Carregando nossas cartas...</p>
+      </div>
+    </div>
+
+    <div class="voltar-container">
+      <a class="cta" href="index.html">Voltar para a Linha do Tempo ❤️</a>
+    </div>
+  </main>
+
+  <script src="script-cartas.js"></script>
+</body>
+</html>
