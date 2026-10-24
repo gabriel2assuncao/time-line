@@ -9,13 +9,11 @@ const CARTA_PRINCIPAL = {
   arquivo: "carta-principal.txt"
 };
 
-// 2. Lista de cartas secundárias (adicione o nome do arquivo .txt aqui quando criar uma nova)
+// 2. Lista de cartas secundárias (adicione novas aqui sempre que quiser)
 const LISTA_CARTAS = [
-  { titulo: "Um recado de hoje", tag: "Recado Especial ✨", arquivo: "carta1.txt" },
-  // Exemplo para quando criar a próxima:
+  { titulo: "Um recado de hoje", tag: "Recado Especial ✨", arquivo: "carta1.txt" }
+  // Quando quiseres adicionar mais cartas no futuro, basta colocar vírgula em cima e adicionar outra linha assim:
   // { titulo: "Pensando em você", tag: "Carta Recente 💌", arquivo: "carta2.txt" }
-];
-{ titulo: "Pensando em você", tag: "Carta Recente 💌", arquivo: "carta2.txt" } // <- Você só adiciona essa linha nova aqui!
 ];
 
 // Fotos do mosaico de fundo
@@ -61,6 +59,7 @@ async function carregarCarta(carta, ehPrincipal = false) {
 
 async function renderizarTodas() {
   const container = $("#lista-cartas");
+  if (!container) return;
   container.innerHTML = "";
 
   // 1. Renderiza a carta principal no topo
@@ -75,5 +74,3 @@ async function renderizarTodas() {
 }
 
 renderizarTodas();
-{ titulo: "Um recado de hoje", tag: "Recado Especial ✨", arquivo: "carta1.txt" },
-
