@@ -75,3 +75,5 @@ async function renderizarTodas() {
 }
 
 renderizarTodas();
+{ titulo: "Um recado de hoje", tag: "Recado Especial ✨", arquivo: "carta1.txt" },
+
