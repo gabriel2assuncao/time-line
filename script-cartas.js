@@ -15,6 +15,8 @@ const LISTA_CARTAS = [
   // Exemplo para quando criar a próxima:
   // { titulo: "Pensando em você", tag: "Carta Recente 💌", arquivo: "carta2.txt" }
 ];
+{ titulo: "Pensando em você", tag: "Carta Recente 💌", arquivo: "carta2.txt" } // <- Você só adiciona essa linha nova aqui!
+];
 
 // Fotos do mosaico de fundo
 const fotosFundo = [
